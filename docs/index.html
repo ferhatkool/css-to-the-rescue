@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./assets/pictures/icon.png">
+        <title>CSS To The Rescue</title>
+    </head>
+    <body>
+        <head>
+
+        </head>
+        <main>
+            <h1>DJ Deck 5</h1>
+            <label id="trackMenuButton-1" class="trackMenuButton">
+                <input type="checkbox" >
+            </label>
+            
+            <label id="trackMenuButton-2" class="trackMenuButton">
+                <input type="checkbox" >
+            </label>
+            <span class="trackMenuChannel1">
+
+            </span>
+            <span class="trackMenuChannel2">
+
+            </span>
+
+            <span class="loadedTrackChannel1">
+                <img id="track1" src="./assets/pictures/dimitri-k-early-uptempo-mash-cover.jpg">
+                <p><b>Dimitri K</b></p>
+                <p>Early Uptempo Mashup</p>
+            </span>
+
+            <span class="loadedTrackChannel2">
+                <img src="./assets/pictures/dimitri-k-where-have-you-been.jpg">
+                <p><b>Dimitri K</b></p>
+                <p>Where Have You Been</p>
+            </span>
+
+            <span class="loadedTrackWaveform1">
+                <img src="./assets/svg/Dimitri K - Early Uptempo Mash.svg" id="waveform-test-1">
+            </span>
+            <span class="loadedTrackWaveform2">
+                <img src="./assets/svg/Dimitri K - Where Have You Been.svg" id="waveform-test-2"> 
+            </span>
+
+
+
+            <div id="gain-1-group">
+                <svg id="gain-1-knop" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                    <g id="Draaiknop" transform="translate(-526 -733)">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="17.5" cy="17.5" r="17.5" transform="translate(526 733)" fill="#707070"/>
+                    <rect id="Rectangle_4" data-name="Rectangle 4" width="2" height="17" rx="0.3" transform="translate(542 751)" fill="#fff"/>
+                    </g>
+                </svg><br>
+                <label>
+                    <input type="range" min=".1" max=".9" step=".01" value=".5" name="gain-1" class="knob" orient="vertical">
+                    <br>gain 1
+                </label>
+            </div>
+            <div id="gain-2-group">
+                <svg id="gain-2-knop" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                    <g id="Draaiknop" transform="translate(-526 -733)">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="17.5" cy="17.5" r="17.5" transform="translate(526 733)" fill="#707070"/>
+                    <rect id="Rectangle_4" data-name="Rectangle 4" width="2" height="17" rx="0.3" transform="translate(542 751)" fill="#fff"/>
+                    </g>
+                </svg><br>
+                <label>
+                    <input type="range" min=".1" max=".9" step=".01" value=".5" name="gain-2" class="knob" orient="vertical">
+                    <br>gain 2
+                </label>
+            </div>
+            <div id="high-freq-1-group">
+                <svg id="high-freq-1-knop" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                    <g id="Draaiknop" transform="translate(-526 -733)">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="17.5" cy="17.5" r="17.5" transform="translate(526 733)" fill="#707070"/>
+                    <rect id="Rectangle_4" data-name="Rectangle 4" width="2" height="17" rx="0.3" transform="translate(542 751)" fill="#fff"/>
+                    </g>
+                </svg><br>
+                <label>
+                    <input type="range" min=".1" max=".9" step=".01" value=".5" name="high-freq-1" class="knob" orient="vertical">
+                    <br>high freq 1
+                </label>
+            </div>
+            <div id="high-freq-2-group">
+                <svg id="high-freq-2-knop" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                    <g id="Draaiknop" transform="translate(-526 -733)">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="17.5" cy="17.5" r="17.5" transform="translate(526 733)" fill="#707070"/>
+                    <rect id="Rectangle_4" data-name="Rectangle 4" width="2" height="17" rx="0.3" transform="translate(542 751)" fill="#fff"/>
+                    </g>
+                </svg><br>
+                <label>
+                    <input type="range" min=".1" max=".9" step=".01" value=".5" name="high-freq-2" class="knob" orient="vertical">
+                    <br>high freq 2
+                </label>
+            </div>
+            <div id="mid-freq-1-group">
+                <svg id="mid-freq-1-knop" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                    <g id="Draaiknop" transform="translate(-526 -733)">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="17.5" cy="17.5" r="17.5" transform="translate(526 733)" fill="#707070"/>
+                    <rect id="Rectangle_4" data-name="Rectangle 4" width="2" height="17" rx="0.3" transform="translate(542 751)" fill="#fff"/>
+                    </g>
+                </svg><br>
+                <label>
+                    <input type="range" min=".1" max=".9" step=".01" value=".5" name="mid-freq-1" class="knob" orient="vertical">
+                    <br>mid freq 1
+                </label>
+            </div>
+            <div id="mid-freq-2-group">
+                <svg id="mid-freq-2-knop" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                    <g id="Draaiknop" transform="translate(-526 -733)">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="17.5" cy="17.5" r="17.5" transform="translate(526 733)" fill="#707070"/>
+                    <rect id="Rectangle_4" data-name="Rectangle 4" width="2" height="17" rx="0.3" transform="translate(542 751)" fill="#fff"/>
+                    </g>
+                </svg><br>
+                <label>
+                    <input type="range" min=".1" max=".9" step=".01" value=".5" name="mid-freq-2" class="knob" orient="vertical">
+                    <br>mid freq 2
+                </label>
+            </div>
+            <div id="low-freq-1-group">
+                <svg id="low-freq-1-knop" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                    <g id="Draaiknop" transform="translate(-526 -733)">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="17.5" cy="17.5" r="17.5" transform="translate(526 733)" fill="#707070"/>
+                    <rect id="Rectangle_4" data-name="Rectangle 4" width="2" height="17" rx="0.3" transform="translate(542 751)" fill="#fff"/>
+                    </g>
+                </svg><br>
+                <label>
+                    <input type="range" min=".1" max=".9" step=".01" value=".5" name="low-freq-1" class="knob" orient="vertical">
+                    <br>low freq 1
+                </label>
+            </div>
+            <div id="low-freq-2-group">
+                <svg id="low-freq-2-knop" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                    <g id="Draaiknop" transform="translate(-526 -733)">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="17.5" cy="17.5" r="17.5" transform="translate(526 733)" fill="#707070"/>
+                    <rect id="Rectangle_4" data-name="Rectangle 4" width="2" height="17" rx="0.3" transform="translate(542 751)" fill="#fff"/>
+                    </g>
+                </svg><br>
+                <label>
+                    <input type="range" min=".1" max=".9" step=".01" value=".5" name="low-freq-2" class="knob" orient="vertical">
+                    <br>low freq 2
+                </label>
+            </div>
+            <label id="volumeSlider1">
+                <input type="range" min=".8" max="1.2" step=".01" value="1" name="volume1" class="slider vertical" orient="vertical">	
+            </label>
+            <label id="volumeSlider2">
+                <input type="range" min=".8" max="1.2" step=".01" value="1" name="volume2" class="slider vertical" orient="vertical">	
+            </label>
+            <label id="tempoSlider1">
+                <input type="range" min=".8" max="1.2" step=".01" value="1" name="tempo1" class="slider vertical" orient="vertical">	
+            </label>
+            <label id="cue1" class="cueButton">
+                <input type="checkbox" >
+            </label>
+            <label id="start1" class="startPauseButton">
+                <input type="checkbox">
+            </label>
+            <label id="channelSlider">
+                <input type="range" min="0" max="1" step=".1" value=".5" name="channel" class="slider" orient="horizontal">	
+            </label>
+            <label id="cue2" class="cueButton">
+                <input type="checkbox" >
+            </label>
+            <label id="start2" class="startPauseButton">
+                <input type="checkbox">
+            </label>
+            <label id="tempoSlider2">
+                <input type="range" min=".8" max="1.2" step=".01" value="1" name="tempo2" class="slider vertical" orient="vertical">	
+            </label>
+        </main>
+        <footer>
+            <script defer src="./assets/js/slider.js"></script>
+        </footer>
+    </body>
+</html>

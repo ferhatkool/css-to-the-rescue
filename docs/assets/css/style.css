@@ -1,0 +1,502 @@
+body {
+    height: 100%;
+    margin: 0px;
+    background: gray;
+    overflow: hidden;
+    align-content: center;
+}
+
+h1 {
+    grid-column: span 9;
+    justify-items: center;
+    justify-self: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 100vw;
+    height: 100vh;
+}
+
+div {
+    text-align: center;
+}
+
+.vertical {
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    transform:rotate(270deg);
+}
+
+/* GRID POSITIONS */
+.trackMenuChannel1 {
+    grid-column: span 10;
+    grid-row-start: 6;
+    grid-row-end: 11;
+    background-color: aqua;
+}
+
+.trackMenuChannel2 {
+    grid-column: span 10;
+    grid-row-start: 6;
+    grid-row-end: 11;
+    background-color: purple;
+}
+
+.loadedTrackChannel1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.loadedTrackChannel1 img {
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.loadedTrackChannel1 p:nth-of-type(1) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 1vh;
+}
+
+.loadedTrackChannel1 p:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 1vh;
+}
+
+.loadedTrackChannel2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.loadedTrackChannel2 img {
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.loadedTrackChannel2 p:nth-of-type(1) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 1vh;
+}
+
+.loadedTrackChannel2 p:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 1vh;
+}
+
+
+.loadedTrackWaveform1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+
+.loadedTrackWaveform2 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#gain-1-group {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+
+}
+
+#gain-2-group {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    justify-self: center;
+    justify-items: end;
+}
+
+#high-freq-1-group {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    justify-self: center;
+    justify-items: end;
+}
+
+#high-freq-2-group {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    justify-self: center;
+    justify-items: end;
+}
+
+#mid-freq-1-group {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    justify-self: center;
+    justify-items: end;
+}
+
+#mid-freq-2-group {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    justify-self: center;
+    justify-items: end;    
+}
+
+#low-freq-1-group {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    justify-self: center;
+    justify-items: end;    
+}
+
+#low-freq-2-group {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    justify-self: center;
+    justify-items: end;    
+}
+
+#trackMenuButton-1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 12;
+    grid-row-end: 12;
+    justify-self: center;
+}
+
+
+#volumeSlider1 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 12;
+    grid-row-end: 12;
+    justify-self: center;
+}
+
+#volumeSlider2 {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 12;
+    grid-row-end: 12;
+    justify-self: center;
+}
+
+#trackMenuButton-2 {
+    grid-column-start: 8;
+    grid-column: span 2;
+    grid-column-end: 9;
+    grid-row-start: 12;
+    grid-row-end: 12;
+    justify-self: center;
+}
+
+#tempoSlider1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 15;
+    grid-row-end: 15;
+    justify-self: center;
+}
+
+#cue1 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 14;
+    grid-row-end: 14;
+    justify-self: center;
+}
+
+#start1 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 15;
+    grid-row-end: 15;
+    justify-self: center;
+}
+
+#channelSlider {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 16;
+    grid-row-end: 16;
+    justify-self: center;
+    justify-items: end;
+}
+
+#cue2 {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 14;
+    grid-row-end: 14;
+    justify-self: center;
+}
+
+#start2 {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 15;
+    grid-row-end: 15;
+    justify-self: center;
+}
+
+#tempoSlider2 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 15;
+    grid-row-end: 15;
+    justify-self: center;
+}
+
+/* SLIDER STYLING */
+
+.slider {
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+.slider:focus {
+    outline: none;
+}
+
+/* CHROME */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 2.188rem;
+    width: 1.688rem;
+    border-radius: 3px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35"><g id="Group_1" data-name="Group 1" transform="translate(763 -461) rotate(90)"><rect id="Rectangle_1" data-name="Rectangle 1" width="35" height="27" transform="translate(461 736)" fill="%23707070"/><rect id="Rectangle_3" data-name="Rectangle 3" width="35" height="13" transform="translate(461 743)" fill="%234f4f4f"/><rect id="Rectangle_2" data-name="Rectangle 2" width="35" height="5" transform="translate(461 747)" fill="%23fff"/></g></svg>');
+    cursor: pointer;
+    margin-top: -.8rem;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d, 1px 1px 1px #0d0d0d, 0px 0px 1px #0d0d0d;
+}
+
+.slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: black;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+.slider:focus::-webkit-slider-runnable-track {
+    background: black;
+}
+
+/* FIREFOX */
+.slider::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+/* KNOB STYLING */
+
+/*.knob {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 5rem;
+}*/
+
+/* FREQUENCY KNOPPEN */
+#gain-1-knop {
+    rotate: calc(360deg * var(--gain-1, 1));
+    justify-self: center;
+}
+
+#gain-2-knop {
+    rotate: calc(360deg * var(--gain-2, 1));
+}
+
+#high-freq-1-knop {
+    rotate: calc(360deg * var(--high-freq-1, 1));
+}
+
+#high-freq-2-knop {
+    rotate: calc(360deg * var(--high-freq-2, 1));
+}
+
+#mid-freq-1-knop {
+    rotate: calc(360deg * var(--mid-freq-1, 1));
+}
+
+#mid-freq-2-knop {
+    rotate: calc(360deg * var(--mid-freq-2, 1));
+}
+
+#low-freq-1-knop {
+    rotate: calc(360deg * var(--low-freq-1, 1));
+}
+
+#low-freq-2-knop {
+    rotate: calc(360deg * var(--low-freq-2, 1));
+}
+
+/* CHECKBOX BUTTONS */
+input[type="checkbox"] {
+    width: 35px;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.cueButton:has(input[type="checkbox"]) {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><g id="Cue_-_Inactive" data-name="Cue - Inactive" transform="translate(-378 -836)"><g id="Rectangle_7" data-name="Rectangle 7" transform="translate(378 836)" fill="%23707070" stroke="%23dedede" stroke-width="2"><rect width="35" height="35" stroke="none"/><rect x="1" y="1" width="33" height="33" fill="none"/></g><text id="CUE" transform="translate(386 858)" fill="%23dedede" font-size="12" font-family="AntipastoPro-Regular, Antipasto Pro"><tspan x="0" y="0">CUE</tspan></text></g></svg>');
+    background-repeat: no-repeat;
+    background-size:contain;
+    cursor: pointer;
+}
+
+.cueButton:has(input[type="checkbox"]:checked) {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><g id="Cue_-_Active" data-name="Cue - Active" transform="translate(-378 -836)"><g id="Rectangle_7" data-name="Rectangle 7" transform="translate(378 836)" fill="%23707070" stroke="%23fb0" stroke-width="2"><rect width="35" height="35" stroke="none"/><rect x="1" y="1" width="33" height="33" fill="none"/></g><text id="CUE" transform="translate(386 858)" fill="%23fb0" font-size="12" font-family="AntipastoPro-Regular, Antipasto Pro"><tspan x="0" y="0">CUE</tspan></text></g></svg>');
+    background-repeat: no-repeat;
+    background-size:contain;
+    cursor: pointer;
+}
+
+.startPauseButton:has(input[type="checkbox"]) {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><g id="Start" transform="translate(-378 -733)"><g id="Rectangle_6" data-name="Rectangle 6" transform="translate(378 733)" fill="%23707070" stroke="%2300ff3c" stroke-width="2"><rect width="35" height="35" stroke="none"/><rect x="1" y="1" width="33" height="33" fill="none"/></g><path id="Polygon_1" data-name="Polygon 1" d="M9.5,0,19,14H0Z" transform="translate(404.5 741.5) rotate(90)" fill="%2300ff3c"/></g></svg>');
+    background-repeat: no-repeat;
+    background-size:contain;
+    cursor: pointer;
+}
+
+.startPauseButton:has(input[type="checkbox"]:checked) {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><g id="Play" transform="translate(-378 -789)"><g id="Rectangle_8" data-name="Rectangle 8" transform="translate(378 789)" fill="%23707070" stroke="red" stroke-width="2"><rect width="35" height="35" stroke="none"/><rect x="1" y="1" width="33" height="33" fill="none"/></g><rect id="Rectangle_9" data-name="Rectangle 9" width="4" height="18" transform="translate(389 798)" fill="red"/><rect id="Rectangle_10" data-name="Rectangle 10" width="4" height="18" transform="translate(398 798)" fill="red"/></g></svg>');
+    background-repeat: no-repeat;
+    background-size:contain;
+    cursor: pointer;
+}
+
+.trackMenuButton:has(input[type=checkbox]) {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><g id="Track_Menu" data-name="Track Menu" transform="translate(-247 -789)"><g id="Rectangle_11" data-name="Rectangle 11" transform="translate(247 789)" fill="%23707070" stroke="%23ff0090" stroke-width="2"><rect width="35" height="35" stroke="none"/><rect x="1" y="1" width="33" height="33" fill="none"/></g><rect id="Rectangle_12" data-name="Rectangle 12" width="25" height="2" transform="translate(252 798)" fill="%23ff0090"/><rect id="Rectangle_13" data-name="Rectangle 13" width="25" height="2" transform="translate(252 813)" fill="%23ff0090"/><rect id="Rectangle_14" data-name="Rectangle 14" width="25" height="2" transform="translate(252 806)" fill="%23ff0090"/></g></svg>');
+    background-repeat: no-repeat;
+    background-size:contain;
+    cursor: pointer;
+}
+
+#trackMenuButton-1:has(input[type=checkbox]) ~ span:nth-of-type(1) {
+    display: none;
+}
+
+#trackMenuButton-1:has(input[type=checkbox]:checked) ~ span:nth-of-type(1) {
+    display:grid
+}
+
+#trackMenuButton-2:has(input[type=checkbox]) ~ span:nth-of-type(2) {
+    display: none;
+}
+
+#trackMenuButton-2:has(input[type=checkbox]:checked) ~ span:nth-of-type(2) {
+    display:grid
+}
+
+#trackMenuButton-1:has(input[type=checkbox]:checked) ~ div {
+    display: none;
+}
+
+#trackMenuButton-2:has(input[type=checkbox]:checked) ~ div {
+    display: none;
+}
+
+#trackMenuButton-1:has(input[type=checkbox]:checked) ~ #trackMenuButton-2:has(input[type=checkbox]:checked) ~ span:nth-of-type(1) {
+    display: none;
+}
+
+#trackMenuButton-1:has(input[type=checkbox]:checked) + #trackMenuButton-2:has(input[type=checkbox]) {
+    display: none;
+}
+
+#trackMenuButton-1:has(input[type=checkbox]:checked) + #trackMenuButton-2:has(input[type=checkbox]:checked) {
+    display: grid;
+}
+
+#trackMenuButton-2:not(:has(input[type=checkbox]:checked)) + #trackMenuButton-1:has(input[type=checkbox]:checked) {
+    
+}
+
+#trackMenuButton-1:has(input[type=checkbox]:checked):has(+ * + #trackMenuButton-2:has(input[type=checkbox])) ~ span:nth-of-type(2) {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .trackMenuButton {
+        display: none;
+    }
+}
+
+.loadedTrackWaveform1 img {
+    width: 100%;
+    max-height: fit-content;
+    overflow-x: scroll;
+}
+
+.loadedTrackWaveform2 img {
+    width: 100%;
+    max-height: fit-content;
+    overflow-x: scroll;
+}

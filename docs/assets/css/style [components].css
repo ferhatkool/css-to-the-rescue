@@ -1,0 +1,204 @@
+body {
+    margin-top: 5rem;
+}
+
+.vertical {
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    transform:rotate(270deg);
+}
+
+/* KNOB STYLING */
+
+.knob {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 5rem;
+}
+
+/* SLIDER STYLING */
+
+.slider {
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+.slider:focus {
+    outline: none;
+}
+
+/* CHROME */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 2.188rem;
+    width: 1.688rem;
+    border-radius: 3px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35"><g id="Group_1" data-name="Group 1" transform="translate(763 -461) rotate(90)"><rect id="Rectangle_1" data-name="Rectangle 1" width="35" height="27" transform="translate(461 736)" fill="%23707070"/><rect id="Rectangle_3" data-name="Rectangle 3" width="35" height="13" transform="translate(461 743)" fill="%234f4f4f"/><rect id="Rectangle_2" data-name="Rectangle 2" width="35" height="5" transform="translate(461 747)" fill="%23fff"/></g></svg>');
+    cursor: pointer;
+    margin-top: -.8rem;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d, 1px 1px 1px #0d0d0d, 0px 0px 1px #0d0d0d;
+}
+
+.slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: black;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+.slider:focus::-webkit-slider-runnable-track {
+    background: black;
+}
+
+/* FIREFOX */
+.slider::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+/* WAVEFORM STYLING */
+
+#waveform-test-1 {
+    display: inherit;
+    height: 120px;
+    width: calc(50% * var(--tempo1, .1));
+}
+
+#waveform-test-2 {
+    display: inherit;
+    height: 120px;
+    width: calc(50% * var(--tempo2, .1));
+}
+
+embed {
+    display: none;
+}
+
+#start-channel:checked + embed {
+    display: block;
+}
+
+label p:nth-of-type(2) {
+    display: inline;
+}
+
+label span:nth-of-type(1) {
+    display: none;
+}
+
+label span:nth-of-type(2) {
+    display: none;
+}
+
+label input[type=radio]:nth-of-type(1):checked ~ span:nth-of-type(1) {
+    display: inline;
+}
+
+label input[type=radio]:nth-of-type(2):checked ~ span:nth-of-type(2) {
+    display: inline;
+}
+
+label input[type=radio]:nth-of-type(1):checked ~ p:nth-of-type(2) {
+    display: none
+}
+
+label input[type=radio]:nth-of-type(2):checked ~ p:nth-of-type(2) {
+    display: none
+}
+
+#draai-knop-test-1 {
+    width: 5rem;
+    rotate: calc(360deg * var(--low-freq-1-test, 1))
+}
+
+/* FREQUENCY KNOPPEN */
+
+#high-freq-1-knop {
+    rotate: calc(360deg * var(--high-freq-1, 1))
+}
+
+#high-freq-2-knop {
+    rotate: calc(360deg * var(--high-freq-2, 1))
+}
+
+#high-freq-3-knop {
+    rotate: calc(360deg * var(--high-freq-3, 1))
+}
+
+#mid-freq-1-knop {
+    rotate: calc(360deg * var(--mid-freq-1, 1))
+}
+
+#mid-freq-2-knop {
+    rotate: calc(360deg * var(--mid-freq-2, 1))
+}
+
+#mid-freq-3-knop {
+    rotate: calc(360deg * var(--mid-freq-3, 1))
+}
+
+#low-freq-1-knop {
+    rotate: calc(360deg * var(--low-freq-1, 1))
+}
+
+#low-freq-2-knop {
+    rotate: calc(360deg * var(--low-freq-2, 1))
+}
+
+#low-freq-3-knop {
+    rotate: calc(360deg * var(--low-freq-3, 1))
+}
+
+#grid-knoppen {
+    align-items: end;
+    display: grid;
+    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-rows: 5rem 5rem 5rem;
+}
+
+#equalizer {
+    width: 312px;
+    height: 109px;
+}
+
+:root {
+    --high-freq-1-edit: max(0.44, min(0.56, var(--high-freq-1)));
+}
+
+#Ellipse_3 {
+    transform: translate(916px, calc(728px * calc(var(--high-freq-1-edit) + .5)));
+}
+
+/* DESIGN DRAAITAFEL */
+main {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 50vh 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+h1 {
+    grid-area: 1 / 2 / 3 / 1;
+}
