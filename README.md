@@ -64,17 +64,17 @@ Zo zien de sliders er uit met de volledige CSS uit de guide:
 
 Zo zien de sliders er uit met mijn eigen geschreven CSS:
 
-<img src='./readme-content/readme-content-8.png' alt="">
+<img src='./readme-content/readme-content-9.png' alt="">
 
 Hiervoor heb ik in Adobe XD een element gemaakt, die ik vervolgens exporteer naar SVG. Er SVG staat als code in de HTML.
 
 Ook heb ik voor de draaiknop een element in Adobe XD gemaakt, geëxporteerd naar SVG code en dit in de HTML gezet.
 
-<img src='./readme-content/readme-content-9.png' alt="">
+<img src='./readme-content/readme-content-10.png' alt="">
 
 Voor de frequentie knoppen heb ik gelijk een grid aangemaakt
 
-<img src='./readme-content/readme-content-10.png' alt="">
+<img src='./readme-content/readme-content-11.png' alt="">
 
 Ik heb een begin gemaakt aan een equializer waarbij de waarde van de positie kan veranderen op basis van de waarde dat voor komt in --high-freq-1. Echter werkt dit nog niet helemaal, omdat de waardes die nodig zijn voor het laten draaien van de knop anders zijn dan de waardes om een puntje omhoog en omlaag te laten gaan. Hier zal ik nog naar moeten kijken, maar voor nu werkt het volgende een soort van
 
@@ -103,11 +103,11 @@ Elementen die ik nog heb toegevoegd:
 
 Zonder grid:
 
-<img src='./readme-content/readme-content-11.png' alt="">
+<img src='./readme-content/readme-content-12.png' alt="">
 
 Met grid:
 
-<img src='./readme-content/readme-content-12.png' alt="">
+<img src='./readme-content/readme-content-13.png' alt="">
 
 Waar ik tegen aan loop is natuurlijk het gebrek aan ruimte, wat erg te zien is bij de cover art, artiest en titel van de liedjes. Het lijkt allemaal erg klein en de tekst is waarschijnlijk ook voor de meesten onleesbaar. Hier moet ik nog even wat op bedenken. Verder loop ik er tegen aan dat ik twee menutjes wil maken waar tracks in staan, één menu voor channel 1 en één menu voor channel 2. Het probleem is echter dat ik niet wil dat ze beiden tegelijk geopend kunnen worden, omdat het anders een warboel kan worden. Nou heb ik het wel voor elkaar gekregen dat als het menu voor channel 1 is geopend, de menuknop voor channel 2 op display: none; komt te staan. Maar dit kan ik tot op heden niet andersom maken vanwege de volgorde van de HTML. Ik heb namelijk de volgende code gebruikt:
 
@@ -124,7 +124,7 @@ Het kan zijn dat ik het weghalen van de menu knop van channel 2 weglaat, omdat h
 
 Ik heb het menu voor de tracks werkend gekregen.
 
-<img src='./readme-content/readme-content-13.png' alt="">
+<img src='./readme-content/readme-content-14.png' alt="">
 
 Hiervoor heb ik het volgende CSS formaat gebruikt:
 
@@ -142,15 +142,15 @@ Ook heb ik nieuwe waveforms gemaakt, die transparant zijn. Dit zijn ook PNGs en 
 
 [alles max]
 
-<img src='./readme-content/readme-content-14.png' alt="">
+<img src='./readme-content/readme-content-15.png' alt="">
 
 [alles min]
 
-<img src='./readme-content/readme-content-15.png' alt="">
+<img src='./readme-content/readme-content-16.png' alt="">
 
 [standaard]
 
-<img src='./readme-content/readme-content-16.png' alt="">
+<img src='./readme-content/readme-content-17.png' alt="">
 
 om de rekenen hoe hoog de waveform moet zijn wordt de volgende berekening gebruikt (natuurlijk geldt dit ook voor beide channels)
 
@@ -164,23 +164,23 @@ Om de effecten na te bootsen heb ik ervoor gekozen om de volume slider en de gai
 
 Nieuwe grid layout:
 
-<img src='./readme-content/readme-content-17.png' alt="">
-
 <img src='./readme-content/readme-content-18.png' alt="">
+
+<img src='./readme-content/readme-content-19.png' alt="">
 
 Alles staat nu vast, wat het resultaat heeft dat als het menu wordt geopend, niet alle elementen alle kanten op vliegen. Dit heb ik gedaan door i.p.v. overal 1fr te gebruiken, de kolommen en rijen specifiekere waardes te geven. Nu moet ik nog het trackmenu beter maken. Daarna is de mobile view als het ware af en kan ik een begin maken aan de web view.
 
 De draaitafel ziet er nu als volgt uit:
 
-<img src='./readme-content/readme-content-19.png' alt="">
-
 <img src='./readme-content/readme-content-20.png' alt="">
+
+<img src='./readme-content/readme-content-21.png' alt="">
 
 Ik heb het grid aangepast, zodat bepaalde elementen een vaste waarde hebben, zoals het de tracks, waveforms, de draaiknoppen en het menu. Hierdoor verandert er geen één positie wanneer het menu wordt geopend en ziet het er beter uit. Ik heb ook extra liedjes toegevoegd, die elk in het bijbehorende channel kunnen worden geplaatst.
 
 Ik heb nu per liedje de waveform ‘meegegeven’. Ik heb hiervoor het stukje code dat gebruikt wordt om de tracks in de channels te zetten gekopiëerd en geplakt, met alleen andere waardes bij de fieldset.
 
-<img src='./readme-content/readme-content-21.png' alt="">
+<img src='./readme-content/readme-content-22.png' alt="">
 
 code voor het ‘inladen’ van een liedje:
 
@@ -202,4 +202,4 @@ De img moet in een fieldset staan om het scrollbaar te maken en voor de juiste p
 
 Alle waveforms toegevoegd en werkend met de radio buttons in het menu:
 
-<img src='./readme-content/readme-content-22.png' alt="">
+<img src='./readme-content/readme-content-23.png' alt="">
