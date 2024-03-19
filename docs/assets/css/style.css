@@ -22,6 +22,910 @@ main {
     height: 100vh;
 }
 
+@media screen and (min-width: 800px) {
+    .trackMenuButton {
+        display: none;
+    }
+
+    .trackChannel1 {
+        display: none;
+    }
+
+    .trackChannel2 {
+        display: none;
+    }
+
+    .trackMenuChannel1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 9;
+        height: 22.75rem;
+        overflow-x: scroll;
+    }
+
+    .trackMenuChannel2 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 5;
+        grid-row-end: 9;
+        height: 22.75rem;
+        overflow-x: scroll;
+    }
+
+    .trackMenuChannel1 fieldset {
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+        grid-template-rows: 5rem repeat(16, 2.5rem);
+        padding: 0px;
+    }
+
+    .trackMenuChannel2 fieldset {
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+        grid-template-rows: 5rem repeat(16, 2.5rem);
+        padding: 0px;
+    }
+
+    fieldset fieldset label {
+        justify-self: center;
+        justify-items: center;
+        height: max-content;
+    }
+  
+    fieldset fieldset p {
+        margin: 0px;
+    }
+    
+    fieldset fieldset p:nth-of-type(odd) {
+        margin-top: 0.5rem;
+    }
+    
+    fieldset fieldset p:nth-of-type(even) {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Tracklist Channel 1 */
+    .trackMenuChannel1 fieldset h2 {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    /* Track 1 - Channel 1 */
+    .trackMenuChannel1 fieldset label:nth-of-type(1) {
+        grid-area: 2 / 1 / span 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(1) {
+        grid-area: 2 / 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(2) {
+        grid-area: 3 / 2;
+    }
+    
+    /* Track 2 - Channel 1 */
+    .trackMenuChannel1 fieldset label:nth-of-type(2) {
+        grid-area: 4 / 1 / span 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(3) {
+        grid-area: 4 / 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(4) {
+        grid-area: 5 / 2;
+    }
+    /* Track 3 - Channel 1 */
+    .trackMenuChannel1 fieldset label:nth-of-type(3) {
+        grid-area: 6 / 1 / span 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(5) {
+        grid-area: 6 / 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(6) {
+        grid-area: 7 / 2;
+    }
+    /* Track 4 - Channel 1 */
+    .trackMenuChannel1 fieldset label:nth-of-type(4) {
+        grid-area: 8 / 1 / span 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(7) {
+        grid-area: 8 / 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(8) {
+        grid-area: 9 / 2;
+    }
+    /* Track 5 - Channel 1 */
+    .trackMenuChannel1 fieldset label:nth-of-type(5) {
+        grid-area: 10 / 1 / span 2 ;   
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(9) {
+        grid-area: 10 / 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(10) {
+        grid-area: 11 / 2; 
+    }
+    /* Track 6 - Channel 1 */
+    .trackMenuChannel1 fieldset label:nth-of-type(6) {
+        grid-area: 12 / 1 / span 2 ;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(11) {
+        grid-area: 12 / 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(12) {
+        grid-area: 13 / 2;
+    }
+    /* Track 7 - Channel 1 */
+    .trackMenuChannel1 fieldset label:nth-of-type(7) {
+        grid-area: 14 / 1 / span 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(13) {
+        grid-area: 14 / 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(14) {
+        grid-area: 15 / 2;
+    }
+    /* Track 8 - Channel 1 */
+    .trackMenuChannel1 fieldset label:nth-of-type(8) {
+        grid-area: 16 / 1 / span 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(15) {
+        grid-area: 16 / 2;
+    }
+    
+    .trackMenuChannel1 fieldset p:nth-of-type(16) {
+        grid-area: 17 / 2;
+    }
+
+    /* Tracklist Channel 1 */
+    .trackMenuChannel2 fieldset h2 {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    /* Track 1 - Channel 2 */
+    .trackMenuChannel2 fieldset label:nth-of-type(1) {
+        grid-area: 2 / 1 / span 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(1) {
+        grid-area: 2 / 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(2) {
+        grid-area: 3 / 2;
+    }
+    
+    /* Track 2 - Channel 2 */
+    .trackMenuChannel2 fieldset label:nth-of-type(2) {
+        grid-area: 4 / 1 / span 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(3) {
+        grid-area: 4 / 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(4) {
+        grid-area: 5 / 2;
+    }
+    /* Track 3 - Channel 2 */
+    .trackMenuChannel2 fieldset label:nth-of-type(3) {
+        grid-area: 6 / 1 / span 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(5) {
+        grid-area: 6 / 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(6) {
+        grid-area: 7 / 2;
+    }
+    /* Track 4 - Channel 2 */
+    .trackMenuChannel2 fieldset label:nth-of-type(4) {
+        grid-area: 8 / 1 / span 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(7) {
+        grid-area: 8 / 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(8) {
+        grid-area: 9 / 2;
+    }
+    /* Track 5 - Channel 2 */
+    .trackMenuChannel2 fieldset label:nth-of-type(5) {
+        grid-area: 10 / 1 / span 2 ;   
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(9) {
+        grid-area: 10 / 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(10) {
+        grid-area: 11 / 2; 
+    }
+    /* Track 6 - Channel 2 */
+    .trackMenuChannel2 fieldset label:nth-of-type(6) {
+        grid-area: 12 / 1 / span 2 ;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(11) {
+        grid-area: 12 / 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(12) {
+        grid-area: 13 / 2;
+        
+    }
+    /* Track 7 - Channel 2 */
+    .trackMenuChannel2 fieldset label:nth-of-type(7) {
+        grid-area: 14 / 1 / span 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(13) {
+        grid-area: 14 / 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(14) {
+        grid-area: 15 / 2;
+    }
+    /* Track 8 - Channel 2 */
+    .trackMenuChannel2 fieldset label:nth-of-type(8) {
+        grid-area: 16 / 1 / span 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(15) {
+        grid-area: 16 / 2;
+    }
+    
+    .trackMenuChannel2 fieldset p:nth-of-type(16) {
+        grid-area: 17 / 2;
+    }
+
+    /* ARTIST AND TITLE - Channel 1 */
+    .trackMenuChannel1:has(fieldset label:nth-of-type(1) input[type="radio"]:checked) ~ fieldset:nth-of-type(4) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(2) input[type="radio"]:checked) ~ fieldset:nth-of-type(6) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(3) input[type="radio"]:checked) ~ fieldset:nth-of-type(8) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(4) input[type="radio"]:checked) ~ fieldset:nth-of-type(10) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(5) input[type="radio"]:checked) ~ fieldset:nth-of-type(12) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(6) input[type="radio"]:checked) ~ fieldset:nth-of-type(14) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(7) input[type="radio"]:checked) ~ fieldset:nth-of-type(16) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(8) input[type="radio"]:checked) ~ fieldset:nth-of-type(18) {
+        display: grid;
+    }
+
+    /* ARTIST AND TITLE - Channel 2 */
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(1) input[type="radio"]:checked) ~ fieldset:nth-of-type(5) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(2) input[type="radio"]:checked) ~ fieldset:nth-of-type(7) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(3) input[type="radio"]:checked) ~ fieldset:nth-of-type(9) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(4) input[type="radio"]:checked) ~ fieldset:nth-of-type(11) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(5) input[type="radio"]:checked) ~ fieldset:nth-of-type(13) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(6) input[type="radio"]:checked) ~ fieldset:nth-of-type(15) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(7) input[type="radio"]:checked) ~ fieldset:nth-of-type(17) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(8) input[type="radio"]:checked) ~ fieldset:nth-of-type(19) {
+        display: grid;
+    }
+    
+    /* WAVEFORMS - Channel 1 */
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(1) input[type="radio"]:checked) ~ fieldset:nth-of-type(20) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(2) input[type="radio"]:checked) ~ fieldset:nth-of-type(22) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(3) input[type="radio"]:checked) ~ fieldset:nth-of-type(24) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(4) input[type="radio"]:checked) ~ fieldset:nth-of-type(26) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(5) input[type="radio"]:checked) ~ fieldset:nth-of-type(28) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(6) input[type="radio"]:checked) ~ fieldset:nth-of-type(30) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(7) input[type="radio"]:checked) ~ fieldset:nth-of-type(32) {
+        display: grid;
+    }
+    
+    .trackMenuChannel1:has(fieldset label:nth-of-type(8) input[type="radio"]:checked) ~ fieldset:nth-of-type(34) {
+        display: grid;
+    }
+
+    /* WAVEFORMS - Channel 2 */
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(1) input[type="radio"]:checked) ~ fieldset:nth-of-type(21) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(2) input[type="radio"]:checked) ~ fieldset:nth-of-type(23) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(3) input[type="radio"]:checked) ~ fieldset:nth-of-type(25) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(4) input[type="radio"]:checked) ~ fieldset:nth-of-type(27) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(5) input[type="radio"]:checked) ~ fieldset:nth-of-type(29) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(6) input[type="radio"]:checked) ~ fieldset:nth-of-type(31) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(7) input[type="radio"]:checked) ~ fieldset:nth-of-type(33) {
+        display: grid;
+    }
+    
+    .trackMenuChannel2:has(fieldset label:nth-of-type(8) input[type="radio"]:checked) ~ fieldset:nth-of-type(35) {
+        display: grid;
+    }
+
+        
+    .loadedTrackWaveform1 {
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 0px
+    }
+
+
+    .loadedTrackWaveform2 {
+        display: none;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 0px
+    }
+
+    
+    .trackChannel1 {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        padding: 0px;
+    }
+
+    .trackChannel2 {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-start: 6;
+        grid-column-end: 10;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        padding: 0px;
+    }
+    
+}
+
+    
+
+    
+
+
+@media screen and (max-width: 800px) {
+    .trackMenuChannel1 {
+        display: none;
+    }
+
+    .trackMenuChannel2 {
+        display: none;
+    }
+
+    fieldset fieldset {
+        display: grid;
+        grid-template-columns: 5rem 1fr 5rem 1fr;
+        grid-template-rows: repeat(16, 2.5rem);
+        padding: 0px;
+    }
+    
+    fieldset fieldset label {
+        justify-self: center;
+        justify-items: center;
+        height: max-content;
+    }
+    
+    fieldset fieldset p {
+        margin: 0px;
+    }
+    
+    fieldset fieldset p:nth-of-type(odd) {
+        margin-top: 0.5rem;
+    }
+    
+    fieldset fieldset p:nth-of-type(even) {
+        margin-bottom: 0.5rem;
+    }
+    
+    
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(1) {
+        grid-area: 1 / 1 / span 2;
+    }
+    
+    fieldset fieldset p:nth-of-type(1) {
+        grid-area: 1 / 2;
+    }
+    
+    fieldset fieldset p:nth-of-type(2) {
+        grid-area: 2 / 2;
+    }
+    
+    /* Track 1 - Channel 2 */
+    fieldset fieldset label:nth-of-type(2) {
+        grid-area: 1 / 3 / span 2;
+    }
+    
+    fieldset fieldset p:nth-of-type(3) {
+        grid-area: 1 / 4;
+    }
+    
+    fieldset fieldset p:nth-of-type(4) {
+        grid-area: 2 / 4;
+    }
+    /* Track 2 - Channel 1 */
+    fieldset fieldset label:nth-of-type(3) {
+        grid-area: 3 / 1 / span 2;
+    }
+    
+    fieldset fieldset p:nth-of-type(5) {
+        grid-area: 3 / 2;
+    }
+    
+    fieldset fieldset p:nth-of-type(6) {
+        grid-area: 4 / 2;
+    }
+    /* Track 2 - Channel 2 */
+    fieldset fieldset label:nth-of-type(4) {
+        grid-area: 3 / 3 / span 2;
+    }
+    
+    fieldset fieldset p:nth-of-type(7) {
+        grid-area: 3 / 4;
+    }
+    
+    fieldset fieldset p:nth-of-type(8) {
+        grid-area: 4 / 4;
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(5) {
+        grid-area: 5 / 1 / span 2 ;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(9) {
+        grid-area: 5 / 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(10) {
+        grid-area: 6 / 2;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(6) {
+        grid-area: 5 / 3 / span 2 ;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(11) {
+        grid-area: 5 / 4;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(12) {
+        grid-area: 6 / 4;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(7) {
+        grid-area: 7 / 1 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(13) {
+        grid-area: 7 / 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(14) {
+        grid-area: 8 / 2;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(8) {
+        grid-area: 7 / 3 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(15) {
+        grid-area: 7 / 4;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(16) {
+        grid-area: 8 / 4;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(9) {
+        grid-area: 9 / 1 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(17) {
+        grid-area: 9 / 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(18) {
+        grid-area: 10 / 2;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(10) {
+        grid-area: 9 / 3 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(19) {
+        grid-area: 9 / 4;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(20) {
+        grid-area: 10 / 4;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(11) {
+        grid-area: 11 / 1 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(21) {
+        grid-area: 11 / 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(22) {
+        grid-area: 12 / 2;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(12) {
+        grid-area: 11 / 3 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(23) {
+        grid-area: 11 / 4;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(24) {
+        grid-area: 12 / 4;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(13) {
+        grid-area: 13 / 1 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(25) {
+        grid-area: 13 / 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(26) {
+        grid-area: 14 / 2;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(14) {
+        grid-area: 13 / 3 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(27) {
+        grid-area: 13 / 4;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(28) {
+        grid-area: 14 / 4;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(15) {
+        grid-area: 15 / 1 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(29) {
+        grid-area: 15 / 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(30) {
+        grid-area: 16 / 2;
+        
+    }
+    /* Track 1 - Channel 1 */
+    fieldset fieldset label:nth-of-type(16) {
+        grid-area: 15 / 3 / span 2;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(31) {
+        grid-area: 15 / 4;
+        
+    }
+    
+    fieldset fieldset p:nth-of-type(32) {
+        grid-area: 16 / 4;
+        
+    }
+    
+    /* ARTIST AND TITLE */
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(1) input[type="radio"]:checked) ~ fieldset:nth-of-type(4) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(2) input[type="radio"]:checked) ~ fieldset:nth-of-type(5) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(3) input[type="radio"]:checked) ~ fieldset:nth-of-type(6) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(4) input[type="radio"]:checked) ~ fieldset:nth-of-type(7) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(5) input[type="radio"]:checked) ~ fieldset:nth-of-type(8) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(6) input[type="radio"]:checked) ~ fieldset:nth-of-type(9) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(7) input[type="radio"]:checked) ~ fieldset:nth-of-type(10) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(8) input[type="radio"]:checked) ~ fieldset:nth-of-type(11) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(9) input[type="radio"]:checked) ~ fieldset:nth-of-type(12) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(10) input[type="radio"]:checked) ~ fieldset:nth-of-type(13) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(11) input[type="radio"]:checked) ~ fieldset:nth-of-type(14) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(12) input[type="radio"]:checked) ~ fieldset:nth-of-type(15) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(13) input[type="radio"]:checked) ~ fieldset:nth-of-type(16) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(14) input[type="radio"]:checked) ~ fieldset:nth-of-type(17) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(15) input[type="radio"]:checked) ~ fieldset:nth-of-type(18) {
+        display: grid;
+    }
+    
+    .trackMenuSmallScreen:has(fieldset label:nth-of-type(16) input[type="radio"]:checked) ~ fieldset:nth-of-type(19) {
+        display: grid;
+    }
+    
+    /* WAVEFORMS */
+    
+    fieldset:has(fieldset label:nth-of-type(1) input[type="radio"]:checked) ~ fieldset:nth-of-type(20) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(2) input[type="radio"]:checked) ~ fieldset:nth-of-type(21) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(3) input[type="radio"]:checked) ~ fieldset:nth-of-type(22) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(4) input[type="radio"]:checked) ~ fieldset:nth-of-type(23) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(5) input[type="radio"]:checked) ~ fieldset:nth-of-type(24) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(6) input[type="radio"]:checked) ~ fieldset:nth-of-type(25) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(7) input[type="radio"]:checked) ~ fieldset:nth-of-type(26) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(8) input[type="radio"]:checked) ~ fieldset:nth-of-type(27) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(9) input[type="radio"]:checked) ~ fieldset:nth-of-type(28) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(10) input[type="radio"]:checked) ~ fieldset:nth-of-type(29) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(11) input[type="radio"]:checked) ~ fieldset:nth-of-type(30) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(12) input[type="radio"]:checked) ~ fieldset:nth-of-type(31) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(13) input[type="radio"]:checked) ~ fieldset:nth-of-type(32) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(14) input[type="radio"]:checked) ~ fieldset:nth-of-type(33) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(15) input[type="radio"]:checked) ~ fieldset:nth-of-type(34) {
+        display: grid;
+    }
+    
+    fieldset:has(fieldset label:nth-of-type(16) input[type="radio"]:checked) ~ fieldset:nth-of-type(35) {
+        display: grid;
+    }
+ 
+    .loadedTrackWaveform1 {
+        display: none;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 0px
+    }
+
+
+    .loadedTrackWaveform2 {
+        display: none;
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 0px
+    }
+
+    .trackChannel1 {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        padding: 0px;
+
+    }
+
+    .trackChannel2 {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        padding: 0px;
+    }
+
+    
+}
+
 fieldset {
     text-align: center;
 }
@@ -34,24 +938,13 @@ fieldset {
 }
 
 /* GRID POSITIONS */
-.trackMenu {
+.trackMenuSmallScreen {
     grid-column: span 10;
     grid-row-start: 5;
     grid-row-end: 9;
     height: 24rem;
 }
 
-.trackChannel1 {
-    display: none;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    padding: 0px;
-    border: none;
-}
 
 .trackChannel1 img {
     height: 100%;
@@ -75,18 +968,6 @@ fieldset {
     grid-row-start: 2;
     grid-row-end: 2;
     font-size: 1vh;
-}
-
-.trackChannel2 {
-    display: none;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    padding: 0px;
-    border: none;
 }
 
 .trackChannel2 img {
@@ -113,31 +994,6 @@ fieldset {
     font-size: 1vh;
 }
 
-
-.loadedTrackWaveform1 {
-    display: none;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    border: none;
-    padding: 0px
-}
-
-
-.loadedTrackWaveform2 {
-    display: none;
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    border: none;
-    padding: 0px
-}
 
 #gain-1-group {
     grid-column-start: 4;
@@ -418,11 +1274,46 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+/* ANIMATION FOR CUE BUTTON - CHANNEL 1 */
+body main:has(#cue1 input[type="checkbox"]:checked) > fieldset #waveform-test-1 {
+    animation-name: playingTrackCue;
+    animation-duration: 10s;
+    animation-play-state: running;
+}
+
+/* ANIMATION FOR CUE BUTTON - CHANNEL 2 */
+body main:has(#cue2 input[type="checkbox"]:checked) > fieldset #waveform-test-2 {
+    animation-name: playingTrackCue;
+    animation-duration: 10s;
+    animation-play-state: running;
+}
+
+/* ANIMATION FOR START BUTTON - CHANNEL 1 */
+body main:has(#start1 input[type="checkbox"]:checked) > fieldset #waveform-test-1 {
+    animation-play-state: running;
+}
+
+/* ANIMATION FOR START BUTTON - CHANNEL 2 */
+body main:has(#start2 input[type="checkbox"]:checked) > fieldset #waveform-test-2 {
+    animation-play-state: running;
+}
+
+
+
+/*body main:not(:has(#start1 input[type="checkbox"]:checked):has(#cue1 input[type="checkbox"])) > fieldset #waveform-test-1 {
+    animation-play-state:running
+}
+
+body main:not(:has(#cue1 input[type="checkbox"]:checked):has(#start1 input[type="checkbox"])) > fieldset #waveform-test-1 {
+    animation-fill-mode: forwards;
+}*/
+
 .startPauseButton:has(input[type="checkbox"]) {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><g id="Start" transform="translate(-378 -733)"><g id="Rectangle_6" data-name="Rectangle 6" transform="translate(378 733)" fill="%23707070" stroke="%2300ff3c" stroke-width="2"><rect width="35" height="35" stroke="none"/><rect x="1" y="1" width="33" height="33" fill="none"/></g><path id="Polygon_1" data-name="Polygon 1" d="M9.5,0,19,14H0Z" transform="translate(404.5 741.5) rotate(90)" fill="%2300ff3c"/></g></svg>');
     background-repeat: no-repeat;
     background-size:contain;
     cursor: pointer;
+    
 }
 
 .startPauseButton:has(input[type="checkbox"]:checked) {
@@ -449,404 +1340,10 @@ input[type="checkbox"] {
 }
 
 /* Voeg styling toe vanaf het 6e element, HEEL BELANGRIJK VOOR HET MENU */
-#trackMenuButton:has(input[type=checkbox]:checked) ~ fieldset:nth-of-type(n+34) {
+#trackMenuButton:has(input[type=checkbox]:checked) ~ fieldset:nth-of-type(n+36) {
     display: none;
 }
 
-fieldset fieldset {
-    display: grid;
-    grid-template-columns: 5rem 1fr 5rem 1fr;
-    grid-template-rows: repeat(16, 2.5rem);
-    padding: 0px;
-}
-
-fieldset fieldset label {
-    justify-self: center;
-    justify-items: center;
-    height: max-content;
-}
-
-fieldset fieldset p {
-    margin: 0px;
-}
-
-fieldset fieldset p:nth-of-type(odd) {
-    margin-top: 0.5rem;
-}
-
-fieldset fieldset p:nth-of-type(even) {
-    margin-bottom: 0.5rem;
-}
-
-
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(1) {
-    grid-area: 1 / 1 / span 2;
-}
-
-fieldset fieldset p:nth-of-type(1) {
-    grid-area: 1 / 2;
-}
-
-fieldset fieldset p:nth-of-type(2) {
-    grid-area: 2 / 2;
-}
-
-/* Track 1 - Channel 2 */
-fieldset fieldset label:nth-of-type(2) {
-    grid-area: 1 / 3 / span 2;
-}
-
-fieldset fieldset p:nth-of-type(3) {
-    grid-area: 1 / 4;
-}
-
-fieldset fieldset p:nth-of-type(4) {
-    grid-area: 2 / 4;
-}
-/* Track 2 - Channel 1 */
-fieldset fieldset label:nth-of-type(3) {
-    grid-area: 3 / 1 / span 2;
-}
-
-fieldset fieldset p:nth-of-type(5) {
-    grid-area: 3 / 2;
-}
-
-fieldset fieldset p:nth-of-type(6) {
-    grid-area: 4 / 2;
-}
-/* Track 2 - Channel 2 */
-fieldset fieldset label:nth-of-type(4) {
-    grid-area: 3 / 3 / span 2;
-}
-
-fieldset fieldset p:nth-of-type(7) {
-    grid-area: 3 / 4;
-}
-
-fieldset fieldset p:nth-of-type(8) {
-    grid-area: 4 / 4;
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(5) {
-    grid-area: 5 / 1 / span 2 ;
-    
-}
-
-fieldset fieldset p:nth-of-type(9) {
-    grid-area: 5 / 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(10) {
-    grid-area: 6 / 2;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(6) {
-    grid-area: 5 / 3 / span 2 ;
-    
-}
-
-fieldset fieldset p:nth-of-type(11) {
-    grid-area: 5 / 4;
-    
-}
-
-fieldset fieldset p:nth-of-type(12) {
-    grid-area: 6 / 4;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(7) {
-    grid-area: 7 / 1 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(13) {
-    grid-area: 7 / 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(14) {
-    grid-area: 8 / 2;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(8) {
-    grid-area: 7 / 3 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(15) {
-    grid-area: 7 / 4;
-    
-}
-
-fieldset fieldset p:nth-of-type(16) {
-    grid-area: 8 / 4;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(9) {
-    grid-area: 9 / 1 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(17) {
-    grid-area: 9 / 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(18) {
-    grid-area: 10 / 2;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(10) {
-    grid-area: 9 / 3 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(19) {
-    grid-area: 9 / 4;
-    
-}
-
-fieldset fieldset p:nth-of-type(20) {
-    grid-area: 10 / 4;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(11) {
-    grid-area: 11 / 1 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(21) {
-    grid-area: 11 / 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(22) {
-    grid-area: 12 / 2;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(12) {
-    grid-area: 11 / 3 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(23) {
-    grid-area: 11 / 4;
-    
-}
-
-fieldset fieldset p:nth-of-type(24) {
-    grid-area: 12 / 4;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(13) {
-    grid-area: 13 / 1 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(25) {
-    grid-area: 13 / 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(26) {
-    grid-area: 14 / 2;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(14) {
-    grid-area: 13 / 3 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(27) {
-    grid-area: 13 / 4;
-    
-}
-
-fieldset fieldset p:nth-of-type(28) {
-    grid-area: 14 / 4;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(15) {
-    grid-area: 15 / 1 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(29) {
-    grid-area: 15 / 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(30) {
-    grid-area: 16 / 2;
-    
-}
-/* Track 1 - Channel 1 */
-fieldset fieldset label:nth-of-type(16) {
-    grid-area: 15 / 3 / span 2;
-    
-}
-
-fieldset fieldset p:nth-of-type(31) {
-    grid-area: 15 / 4;
-    
-}
-
-fieldset fieldset p:nth-of-type(32) {
-    grid-area: 16 / 4;
-    
-}
-
-
-/*body:has(
-    main fieldset fieldset label:nth-of-type(1) input[type="radio"]:checked
-)
-> main {
-    display: none;
-}*/
-
-/* ARTIST AND TITLE */
-fieldset:has(fieldset label:nth-of-type(1) input[type="radio"]:checked) ~ fieldset:nth-of-type(2) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(2) input[type="radio"]:checked) ~ fieldset:nth-of-type(3) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(3) input[type="radio"]:checked) ~ fieldset:nth-of-type(4) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(4) input[type="radio"]:checked) ~ fieldset:nth-of-type(5) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(5) input[type="radio"]:checked) ~ fieldset:nth-of-type(6) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(6) input[type="radio"]:checked) ~ fieldset:nth-of-type(7) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(7) input[type="radio"]:checked) ~ fieldset:nth-of-type(8) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(8) input[type="radio"]:checked) ~ fieldset:nth-of-type(9) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(9) input[type="radio"]:checked) ~ fieldset:nth-of-type(10) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(10) input[type="radio"]:checked) ~ fieldset:nth-of-type(11) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(11) input[type="radio"]:checked) ~ fieldset:nth-of-type(12) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(12) input[type="radio"]:checked) ~ fieldset:nth-of-type(13) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(13) input[type="radio"]:checked) ~ fieldset:nth-of-type(14) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(14) input[type="radio"]:checked) ~ fieldset:nth-of-type(15) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(15) input[type="radio"]:checked) ~ fieldset:nth-of-type(16) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(16) input[type="radio"]:checked) ~ fieldset:nth-of-type(17) {
-    display: grid;
-}
-
-/* WAVEFORMS */
-
-fieldset:has(fieldset label:nth-of-type(1) input[type="radio"]:checked) ~ fieldset:nth-of-type(18) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(2) input[type="radio"]:checked) ~ fieldset:nth-of-type(19) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(3) input[type="radio"]:checked) ~ fieldset:nth-of-type(20) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(4) input[type="radio"]:checked) ~ fieldset:nth-of-type(21) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(5) input[type="radio"]:checked) ~ fieldset:nth-of-type(22) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(6) input[type="radio"]:checked) ~ fieldset:nth-of-type(23) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(7) input[type="radio"]:checked) ~ fieldset:nth-of-type(24) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(8) input[type="radio"]:checked) ~ fieldset:nth-of-type(25) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(9) input[type="radio"]:checked) ~ fieldset:nth-of-type(26) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(10) input[type="radio"]:checked) ~ fieldset:nth-of-type(27) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(11) input[type="radio"]:checked) ~ fieldset:nth-of-type(28) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(12) input[type="radio"]:checked) ~ fieldset:nth-of-type(29) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(13) input[type="radio"]:checked) ~ fieldset:nth-of-type(30) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(14) input[type="radio"]:checked) ~ fieldset:nth-of-type(31) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(15) input[type="radio"]:checked) ~ fieldset:nth-of-type(32) {
-    display: grid;
-}
-
-fieldset:has(fieldset label:nth-of-type(16) input[type="radio"]:checked) ~ fieldset:nth-of-type(33) {
-    display: grid;
-}
 
 fieldset label input[type="radio"] {
     position: absolute;
@@ -863,11 +1360,7 @@ fieldset label img {
 
 
 
-@media screen and (min-width: 800px) {
-    .trackMenuButton {
-        display: none;
-    }
-}
+
 
 fieldset img {
     overflow-x: scroll;
@@ -877,11 +1370,19 @@ fieldset img {
 #waveform-test-1 {
     height: calc(60px * calc(var(--volume1) + calc(var(--low-freq-1) * 0.05) + calc(var(--mid-freq-1) * 0.05) + calc(var(--high-freq-1) * 0.05) + calc(var(--gain-1) * 0.2)));
     width: calc(100% * var(--tempo1, .1));
+    position: relative;
+    animation-name: playingTrackStart;
+    animation-duration: 10s;
+    animation-play-state: paused;
 }
 
 #waveform-test-2 {
     height: calc(60px * calc(var(--volume2) + calc(var(--low-freq-2) * 0.05) + calc(var(--mid-freq-2) * 0.05) + calc(var(--high-freq-2) * 0.05) + calc(var(--gain-2) * 0.2)));
     width: calc(100% * var(--tempo2, .1));
+    position: relative;
+    animation-name: playingTrackStart;
+    animation-duration: 10s;
+    animation-play-state: paused;
 }
 
 .scrollbar {
@@ -912,3 +1413,36 @@ fieldset img {
 #track1 {
     height: 5rem;
 }
+
+fieldset {
+    border: none;
+}
+
+fieldset fieldset {
+    border: none;
+}
+
+fieldset:has(fieldset) {
+    border: 1px solid white;
+}
+
+@keyframes playingTrackStart {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -300%;
+    }
+}
+
+@keyframes playingTrackCue {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -300%;
+    }
+}
+
