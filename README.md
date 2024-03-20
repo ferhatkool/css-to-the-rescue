@@ -1,9 +1,58 @@
 # css-to-the-rescue
-[uitleg over de opdracht]
+Voor CSS To The Rescue staat CSS in het belang voor het maken van een website. De meest belangrijke voorwaarde voor de opdracht is dat er GEEN gebruik mag worden gemaakt van JavaScript, behalve het aangeleverde script van Sanne om sliders te kunnen gebruiken.
+
+## Eindevaluatie
+# Eindevaluatie
+
+Om gelijk met de deur in huis te vallen, ik heb super veel geleerd van het maken van deze opdracht en heb er veel plezier in gehad (als dingen niet meewerkten was het plezier iets minder :P). Voorgaand aan de opdracht had ik het idee bedacht om een draaitafel na te maken, maar verloor ik al snel de hoop, omdat het mij onmogelijk leek om zoiets in alleen CSS na te maken. Toch ben ik gaan proberen een draaitafel na te maken. Hiervoor wilde ik eerst de basis functionaliteiten van een draaitafel werkend hebben, zoals de draaiknoppen, een soort menu om liedjes te kunnen selecteren en de sliders. 
+
+Dit ben ik vervolgens gaan uitwerken door deze elementen eerst in een grid te plaatsen en deze een positie in het grid te geven. Hiervoor heb ik bij bepaalde onderdelen in het grid nog een grid gebruikt, bijvoorbeeld voor de groepering van de cover art, artiest en naam van het liedje.
+
+Dit was de allereerste keer dat ik met grid heb gewerkt en ik ben er helemaal fan van geworden. Ik zie nu de meerwaarde in van het gebruik maken van grid om een webpagina in te kunnen delen.
+
+Vervolgens ben ik verder gaan werken aan het menu, want eerst had ik alleen twee radio buttons die iets lieten veranderen. Het menu zou 8 liedjes bevatten, die per channel (er zijn twee channels) geplaatst kunnen worden. Hiervoor zou ik 16 radio buttons moeten gebruiken, die allemaal gebruik maken van :has om een liedje 'in te laden'. Net als dat ik nog nooit met grid heb gewerkt, had ik nog nooit met :has gewerkt. Hier was ik wel kort op vastgelopen, omdat ik nog niet goed begreep hoe :has goed gebruikt kon worden i.c.m. CSS nesting. Uiteindelijk kwam ik erachter dat :has gebruikt kan worden om bijvoorbeeld main:has(fieldset fieldset label input([type="radio"]):checked) te kunnen gebruiken. Hiervoor had ik nog tussen label en input een :has staan, waardoor het niet werkte. Door :has zo te gebruiken ben ik de waarde van :has gaan gebruiken en net zoals bij grid ben ik helemaal overtuigd van hoe handig :has kan zijn.
+
+Bij het maken van het menu had ik achteraf gezien beter li en ul kunnen gebruiken dan een grid, omdat ik nu héééél veel regels code heb voor het grid, terwijl dit prima met een paar regels zou hebben gekund als ik li en ul zou hebben gebruikt voor de positionering van de groepen in het menu. 
+
+Uiteindelijk heb ik het design afgerond en is het eindresultaat het volgende geworden:
+
+### Web view
+
+<img src='./readme-content/final-web-view.png' alt="">
+
+### Mobile view (menu dicht)
+
+<img src='./readme-content/final-mobile-view-no-menu.png' alt="">
+
+### Mobile view (menu open)
+
+<img src='./readme-content/final-mobile-view-with-menu.png' alt="">
+
+### Concreet de onderwerpen die ik tijdens het maken van de opdracht heb geleerd:
+
+- CSS nesting
+- :has()
+- display: grid;
+- SVG elementen gebruiken
+- checkbox:checked
+- font-size met clamp
+- Manipuleren van elementen a.d.h.v. sliders
+
+### Wat neem ik mee naar een volgende opdracht?
+
+- Eerst de vaste HTML-structuur maken, vervolgens aan de CSS beginnen en als ik nog elementen in de HTML mis, zoals voor afbeeldingen, een div of section gebruiken.
+- De juiste HTML elementen gebruiken voor het juiste doeleind (geen fieldset voor een afbeelding bijvoorbeeld)
+- Mooiere en compactere code schrijven.
+- Geen herhalende waardes toewijzen aan de elementen in CSS, maar terugkerende waardes in een aparte class zetten.
 
 ## Idee
+Het idee dat ik heb bedacht voor deze opdracht is om een draaitafel dat DJ's gebruiken na te maken. Hiervoor heb ik het volgende voorbeeld gepakt, met daarbij gemaakte schetsen:
 
-## Schetsen
+### Voorbeeld
+<img src='./readme-content/voorbeeld.jpg' alt="">
+
+### Schetsen
+
 
 ## Logs
 ### 04-03-2024
@@ -203,3 +252,86 @@ De img moet in een fieldset staan om het scrollbaar te maken en voor de juiste p
 Alle waveforms toegevoegd en werkend met de radio buttons in het menu:
 
 <img src='./readme-content/readme-content-23.png' alt="">
+
+### 19-03-2024
+Ik heb een animatie gemaakt voor de cue en start knoppen waardoor het lijkt alsof het liedje wordt afgespeeld. Hiervoor heb ik twee animaties gemaakt die hetzelfde zijn, alleen wordt de ene animatie gebruikt voor de cue knop en de andere voor de start knop. De reden hiervoor is dat bij de cue knop animatie de animatie opnieuw moet beginnen wanneer de checkbox niet meer checked is en bij de start knop animatie moet de animatie doorgaan wanneer de checkbox niet meer checked (pauze) is. ([bron](https://css-tricks.com/how-to-play-and-pause-css-animations-with-css-custom-properties/))
+
+```css
+/* ANIMATION FOR CUE BUTTON - CHANNEL 1 */
+body main:has(#cue1 input[type="checkbox"]:checked) > fieldset #waveform-test-1 {
+    animation-name: playingTrackCue;
+    animation-duration: 10s;
+    animation-play-state: running;
+}
+
+/* ANIMATION FOR CUE BUTTON - CHANNEL 2 */
+body main:has(#cue2 input[type="checkbox"]:checked) > fieldset #waveform-test-2 {
+    animation-name: playingTrackCue;
+    animation-duration: 10s;
+    animation-play-state: running;
+}
+
+/* ANIMATION FOR START BUTTON - CHANNEL 1 */
+body main:has(#start1 input[type="checkbox"]:checked) > fieldset #waveform-test-1 {
+    animation-play-state: running;
+}
+
+/* ANIMATION FOR START BUTTON - CHANNEL 2 */
+body main:has(#start2 input[type="checkbox"]:checked) > fieldset #waveform-test-2 {
+    animation-play-state: running;
+}
+
+#waveform-test-1 {
+    height: calc(60px * calc(var(--volume1) + calc(var(--low-freq-1) * 0.05) + calc(var(--mid-freq-1) * 0.05) + calc(var(--high-freq-1) * 0.05) + calc(var(--gain-1) * 0.2)));
+    width: calc(100% * var(--tempo1, .1));
+    position: relative;
+    animation-name: playingTrackStart;
+    animation-duration: 10s;
+    animation-play-state: paused;
+}
+
+#waveform-test-2 {
+    height: calc(60px * calc(var(--volume2) + calc(var(--low-freq-2) * 0.05) + calc(var(--mid-freq-2) * 0.05) + calc(var(--high-freq-2) * 0.05) + calc(var(--gain-2) * 0.2)));
+    width: calc(100% * var(--tempo2, .1));
+    position: relative;
+    animation-name: playingTrackStart;
+    animation-duration: 10s;
+    animation-play-state: paused;
+}
+```
+
+Ik heb voor de webview twee track menu’s toegevoegd, één voor channel 1 en één voor channel 2. Dit is een ander menu dan voor de mobile view, omdat dat één menu is voor beide channels. Hiervoor heb ik alle benodigde HTML en CSS moeten dupliceren en omzetten naar iets dat voor de web view past. Door het toevoegen van deze twee menu’s moest ik ook de CSS voor de mobile view van het menu aanpassen.
+
+<img src='./readme-content/readme-content-24.png' alt="">
+
+### 20-03-2024
+Ik heb fonts toegevoegd voor h1, h2, p en label. Voor h1 heb ik honk gebruikt en voor de overige elementen een variatie van Avenir. 
+
+<img src='./readme-content/readme-content-25.png' alt="">
+
+Ook heb ik schaalbare font-sizes gespecificeerd:
+
+```css
+h1 {
+    font-family: honk;
+    font-size: clamp(1rem, 1.529vw + 0.5rem, 2.5rem);
+    margin: 0px;
+    align-self: center;
+}
+
+h2 {
+    font-family: avenirBlack;
+    font-size: clamp(0.667rem, 1.146vw + 0.533rem, 1.267rem)
+}
+
+p {
+    font-family: avenirBook;
+    font-size: clamp(0.625rem, 0.637vw + 0.486rem, 1.25rem);
+}
+
+label {
+    font-family: avenirBook;
+}
+```
+
+Verder heb ik op basis van de feedback van Sanne delen van de CSS aangepast. Zo heb ik bijna alle fieldsets vervangen voor divs, brs en ids weggehaald bij de volume knoppen, dubbele CSS in één class gezet, gebruikte kleuren als root element gezet en b vervangen voor strong. Tenslotte heb ik een eindevaluatie geschreven van de opdracht.
