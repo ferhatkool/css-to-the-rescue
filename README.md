@@ -1,8 +1,20 @@
 # css-to-the-rescue
 Voor CSS To The Rescue staat CSS in het belang voor het maken van een website. De meest belangrijke voorwaarde voor de opdracht is dat er GEEN gebruik mag worden gemaakt van JavaScript, behalve het aangeleverde script van Sanne om sliders te kunnen gebruiken.
 
+## Idee
+Het idee dat ik heb bedacht voor deze opdracht is om een draaitafel dat DJ's gebruiken na te maken. Hiervoor heb ik het volgende voorbeeld gepakt, met daarbij gemaakte schetsen:
+
+
+### Voorbeeld
+<img src='./readme-content/voorbeeld.jpg' alt="">
+
+### Schetsen
+<img src='./readme-content/schets-1.jpg' alt="">
+<img src='./readme-content/schets-2.jpg' alt="">
+<img src='./readme-content/schets-3.jpg' alt="">
+
+
 ## Eindevaluatie
-# Eindevaluatie
 
 Om gelijk met de deur in huis te vallen, ik heb super veel geleerd van het maken van deze opdracht en heb er veel plezier in gehad (als dingen niet meewerkten was het plezier iets minder :P). Voorgaand aan de opdracht had ik het idee bedacht om een draaitafel na te maken, maar verloor ik al snel de hoop, omdat het mij onmogelijk leek om zoiets in alleen CSS na te maken. Toch ben ik gaan proberen een draaitafel na te maken. Hiervoor wilde ik eerst de basis functionaliteiten van een draaitafel werkend hebben, zoals de draaiknoppen, een soort menu om liedjes te kunnen selecteren en de sliders. 
 
@@ -38,21 +50,12 @@ Uiteindelijk heb ik het design afgerond en is het eindresultaat het volgende gew
 - font-size met clamp
 - Manipuleren van elementen a.d.h.v. sliders
 
-### Wat neem ik mee naar een volgende opdracht?
-
+### Wat neem ik mee naar/wat zou ik beter willen doen voor een volgende opdracht?
+- Schets maken waarin alle HTML elementen worden ontleden, om zo een goed beeld te schetsen van hoe de HTML-structuur eruit komt te zien.
 - Eerst de vaste HTML-structuur maken, vervolgens aan de CSS beginnen en als ik nog elementen in de HTML mis, zoals voor afbeeldingen, een div of section gebruiken.
 - De juiste HTML elementen gebruiken voor het juiste doeleind (geen fieldset voor een afbeelding bijvoorbeeld)
 - Mooiere en compactere code schrijven.
 - Geen herhalende waardes toewijzen aan de elementen in CSS, maar terugkerende waardes in een aparte class zetten.
-
-## Idee
-Het idee dat ik heb bedacht voor deze opdracht is om een draaitafel dat DJ's gebruiken na te maken. Hiervoor heb ik het volgende voorbeeld gepakt, met daarbij gemaakte schetsen:
-
-### Voorbeeld
-<img src='./readme-content/voorbeeld.jpg' alt="">
-
-### Schetsen
-
 
 ## Logs
 ### 04-03-2024
